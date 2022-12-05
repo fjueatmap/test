@@ -134,12 +134,12 @@
             }
             $("#menu").css("width",$(".main").length*100)
             $('img[usemap]').rwdImageMaps();
-            $(".sub2").slideUp(0);
-            for(i = 0;i<$(".mo").length;++i){
-                $(".mo:eq("+i+")").click({id:i},function(e){
-                    n=e.data.id
-                    $(".sub2:eq("+n+")").slideToggle();
-                    $(".sub2:not(:eq(" + n + "))").slideUp();
+            $(".sub2").slideUp();
+            for(j = 0;j<$(".mo").length;++j){
+                $(".mo:eq("+j+")").click({id:j},function(a){
+                    m=a.data.id
+                    $(".sub2:eq("+m+")").slideToggle();
+                    $(".sub2:not(:eq(" + m + "))").slideUp();
                 })
             }
        })
