@@ -124,7 +124,7 @@
     <script src="jquery.rwdImageMaps.js"></script>
     <script>
        $(document).ready(function(){
-            $(".sub").slideUp(0)
+            $(".sub").slideUp(0);
             for(i = 0;i<$(".main").length;++i){
                 $(".main:eq("+i+")").click({id:i},function(e){
                     n=e.data.id
@@ -134,7 +134,7 @@
             }
             $("#menu").css("width",$(".main").length*100)
             $('img[usemap]').rwdImageMaps();
-            $(".sub2").slideUp(0)
+            $(".sub2").slideUp(0);
             for(i = 0;i<$(".mo").length;++i){
                 $(".mo:eq("+i+")").click({id:i},function(e){
                     n=e.data.id
